@@ -18,4 +18,4 @@ resources:
   bugtracker: http://github.com/reneeb/Mojolicious-Plugin-BootstrapAlerts/issues
   homepage: http://github.com/reneeb/Mojolicious-Plugin-BootstrapAlerts
   repository: http://github.com/reneeb/Mojolicious-Plugin-BootstrapAlerts.git
-version: 0.03
+version: 0.04

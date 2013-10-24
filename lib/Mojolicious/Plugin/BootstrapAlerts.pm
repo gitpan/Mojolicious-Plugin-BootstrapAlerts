@@ -9,7 +9,7 @@ use parent 'Mojolicious::Plugin';
 
 use Mojo::ByteStream;
 
-our $VERSION = 0.03;
+our $VERSION = 0.04;
 
 sub register {
     my ($self, $app, $config) = @_;
@@ -82,6 +82,18 @@ sub register {
 }
 
 1;
+
+__END__
+
+=pod
+
+=head1 NAME
+
+Mojolicious::Plugin::BootstrapAlerts - Bootstrap alerts for your web app
+
+=head1 VERSION
+
+version 0.04
 
 =head1 SYNOPSIS
 
@@ -182,3 +194,16 @@ this stash key for your own purposes.
 C<Mojo::DOM> I<html_unescapes> HTML entities when the HTML is parsed. So the injection might fail if you have
 a HTML entity in the element before/after that the notifications are injected.
 
+=head1 AUTHOR
+
+Renee Baecker <reneeb@cpan.org>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is Copyright (c) 2013 by Renee Baecker.
+
+This is free software, licensed under:
+
+  The Artistic License 2.0 (GPL Compatible)
+
+=cut
