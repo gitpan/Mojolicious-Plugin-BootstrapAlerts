@@ -9,7 +9,7 @@ use parent 'Mojolicious::Plugin';
 
 use Mojo::ByteStream;
 
-our $VERSION = 0.04;
+our $VERSION = 0.05;
 
 sub register {
     my ($self, $app, $config) = @_;
@@ -63,6 +63,9 @@ sub register {
             return if $format ne 'html';
 
             my $notifications = $c->notifications->to_string;
+
+            return if !$notifications;
+
             my $dom           = Mojo::DOM->new( ${$content} );
             my $selector      = $config->{before} || $config->{after};
             my $element       = $dom->at( $selector );
@@ -93,7 +96,7 @@ Mojolicious::Plugin::BootstrapAlerts - Bootstrap alerts for your web app
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 SYNOPSIS
 

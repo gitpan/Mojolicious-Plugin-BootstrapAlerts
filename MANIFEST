@@ -10,6 +10,7 @@ eg/test.psgi
 lib/Mojolicious/Plugin/BootstrapAlerts.pm
 t/auto_inject.t
 t/auto_inject_no_element.t
+t/no_notifications.t
 t/notifications.t
 t/notifications_not_dismissable_global.t
 t/notifications_not_dismissable_local.t
